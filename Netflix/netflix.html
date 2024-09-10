@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            background-image: url(peliculas.jpg);
+            width: 100vw;
+            height: 80vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: 8px solid rgb(41, 41, 41);
+
+        }
+        .bg-dark{
+            background-color: rgba(0, 0, 1, 0.462);
+            width: 100vw;
+            height: 80vh;
+        }
+        .header{
+            width: 100vw;
+            height: 8vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            margin-left: 150px;
+        }
+        .botones{
+            
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-right: 100px;
+        }
+        .btn{
+        width: 130px;
+        height: 35px;
+        border-radius: 5px;
+        }
+        .idioma{
+        background-color: transparent;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.723);
+
+        }
+        .idioma:hover{
+        background-color: white;
+        color: black;
+        }
+        .sesion{
+        background-color: red;
+        color: white;
+        border: 0px;
+
+        }
+        .sesion:hover{
+        background-color: darkred;
+        border: 0px;
+        }
+        .content{
+            margin-top: 30vh;
+        }
+        .cuerpo>h1{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            text-align: center;
+            
+        }
+        .cuerpo>h3{
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .cuerpo>p{
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .buscador{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .buscador>.buscar{
+        width: 350px;
+        height: 5vh;
+        border-radius: 5px;
+        border: 2px solid #aeaeaed5;
+        background-color: transparent;
+        background-image: url(search.png);
+        background-position: 5px 2px;
+        background-repeat: no-repeat;
+        padding-left: 60px;
+        border-radius: 5px;
+        }
+       
+        .comenzar{
+        background-color: red;
+        color: white;
+        border: 0px;
+        border-radius: 5px;
+        }
+        .comenzar.hover{
+            background-color: darkred;
+            border: 0px; 
+        }
+        .botones>.idiomas{
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid #aeaeae;
+            color: white;
+            background-color: transparent;
+            background-image: url(lang.png);
+            background-position: 2px 2px;
+            background-repeat: no-repeat;
+            padding-left: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-dark">
+            <div class="header">
+                <div class="logo">
+                    <img src="netflix.png" alt="logo" width="100px">
+                </div>
+                <div class="botones">
+                    <select name="idioma" id="idioma" class="idiomas">
+                        <option value="Español">Español</option>
+                        <option value="Ingles">Ingles</option>
+
+                    </select>
+                    <button class="btn sesion">Iniciar Sesion</button>
+                </div>
+            </div>
+            <div class="content">
+            <div class="cuerpo">
+                <h1>Películas ilimitadas y mucho más</h1>
+                <h3>Disfruta donde quieras. Cancela cuando quieras.</h3>
+                <p>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu memebresía de Netflix.</p>
+            </div>
+            <div class="buscador">
+                <input type="text" placeholder="Email" class="buscar">
+                <button class="btn comenzar">Comenzar ></button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
